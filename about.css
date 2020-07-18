@@ -1,0 +1,863 @@
+*
+{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+
+html, body 
+{
+	overflow-x: hidden;
+}
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 768px)
+{
+    button
+	{
+		color: white;
+	}
+
+	#links a
+	{
+		color:white;
+		letter-spacing: 1px;
+	}
+	#links a:hover
+    {
+		color: #17fc54;
+	    border-bottom: 1px solid #17fc54;
+    }
+    #name
+	{
+		color:white;
+		
+	}
+    #pchome,#home
+    {
+    	display: none;
+	}
+    #mobile-card
+	{
+		background-color:#fcfaf2;
+	}
+    #a1
+	{
+	   margin-top: 15%;
+	   padding-top: 5%;
+	   font-family: 'Open Sans Condensed', sans-serif;
+	   letter-spacing: 4px;
+	   text-align: center;
+	}
+	#a2
+	{
+		font-family: 'Maven Pro', sans-serif;
+	    letter-spacing: 3px;
+	    text-align: center;
+	    color:#0176F6;
+	}
+    #a3
+	{
+		font-family: 'Nunito Sans', sans-serif;
+		margin-left: 3%;
+		letter-spacing: 1px;
+		font-size: 20px;
+	}
+	#a4
+	{
+		margin-left: 5%;
+		letter-spacing: 3px;
+	}
+	
+	#myself
+	{
+		background-color:#F8F9FA;
+	    padding-top: 10%;
+		padding-bottom: 10%;
+		padding-left: 3%;
+		padding-right: 5%;
+	}
+    .info
+	{
+		
+		text-align: justify;
+		font-family: 'Montserrat', sans-serif;
+		font-size:18px;
+		letter-spacing: 0.5px;
+		
+	}
+	.about p
+    {
+		border-bottom: 2px solid #0176F6;
+		letter-spacing: 2px;
+		width: 27%;
+    }
+    #education
+	{
+		background-color:#81BFFF;
+		padding-top: 10%;
+		padding-bottom: 5%;
+		
+	}
+	#edu
+	{
+		text-align: center;
+	}
+	#timediv
+	{
+		padding-left: 20%;
+	}
+	ul.timeline {
+    list-style-type: none;
+	}
+	ul.timeline:before {
+	    content: ' ';
+	    background: black;
+	    display: inline-block;
+	    position: absolute;
+	    left: 29px;
+	    width: 1%;
+	    height: 100%;
+	    z-index: 400;
+	}
+	ul.timeline > li {
+	    padding-left: 12%;
+	}
+	ul.timeline > li:before {
+	    content: ' ';
+	    background: white;
+	    display: inline-block;
+	    position: absolute;
+	    border-radius: 50%;
+	    border: 3px solid red;
+	    left: 20px;
+	    width: 20px;
+	    height: 20px;
+	    z-index: 400;
+	}
+	ul li p
+	{
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-size:24px;
+		letter-spacing: 2px;
+		font-style: bold;
+		color:white;
+	}
+	ul li h4
+	{
+		color:red;
+	}
+
+	#skills p
+	{
+		margin-left: 35%;
+		letter-spacing: 2px;
+		font-size: 20px;
+		border-bottom: 2px solid #0176F6;
+		width:20%;
+
+	}
+	#skills h1
+	{
+		margin-left: 27%;
+		letter-spacing: 1px;
+		padding-bottom: 5%;
+	}
+	#pgstyle
+	{
+		width:85%;
+		height:24px;
+		margin-left: 8%;
+		margin-bottom: 8%;
+	}
+
+	.progress .skill 
+	{
+	  font: bold 12px 'Montserrat', sans-serif;
+	  text-transform: uppercase;
+	}
+	.progress .skill .val {
+	  float: right;
+	  margin: 0 8px 0 0;
+	  }
+
+	.progress-bar {
+	  text-align: left;
+	  }
+
+	#projects
+	{
+		background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url('bg1.jpg');
+		height: 100%; 
+		background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    padding-bottom: 10%;
+	    padding-top: 10%;
+	    
+	}
+
+	.card
+    {
+	  margin-left: 10%;
+	  margin-bottom: 8%;
+	  width:18rem;
+    }
+
+	.card1-hover .wbinfo
+	{
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+		padding: 0;
+
+	}
+	.card1-hover:hover .wbinfo
+	{
+		visibility: visible;
+		opacity:10;
+		height: auto;
+		transition: opacity 1s ease;
+
+
+	}
+
+	.card2-hover .wbinfo
+	{
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+		padding: 0;
+	}
+	.card2-hover:hover .wbinfo
+	{
+		visibility: visible;
+		opacity:10;
+		height: auto;
+		transition: opacity 1s ease;
+
+	}
+
+	.card3-hover .wbinfo
+	{
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+		padding: 0;
+	}
+	.card3-hover:hover .wbinfo
+	{
+		visibility: visible;
+		opacity:10;
+		height: auto;
+		transition: opacity 1s ease;
+
+	}
+
+	#f1:hover,#f2:hover,#f3:hover
+	{
+		 z-index: 2;
+	    -webkit-transition: all 200ms ease-in;
+	    -webkit-transform: scale(1.05);
+	    -ms-transition: all 200ms ease-in;
+	    -ms-transform: scale(1.05);   
+	    -moz-transition: all 200ms ease-in;
+	    -moz-transform: scale(1.05);
+	    transition: all 200ms ease-in;
+	    transform: scale(1.05);
+	}
+
+	.acc
+	{
+		margin-left: 20%;
+		letter-spacing: 2px;
+		font-size: 20px;
+		border-bottom: 2px solid white;
+		width:57%;
+		color: white;
+	}
+	.protitle
+	{
+		margin-left: 20%;
+		letter-spacing: 1px;
+		padding-bottom: 5%;
+		color:white;
+	}
+
+	#inspirations
+	{
+		background-color: #faffe0;
+		padding-bottom: 5%;
+		margin-bottom: 5%;
+	}
+
+	.institle
+	{
+		padding-top: 12%;
+		margin-left:10%; 
+	}
+    
+	#sp img
+	{
+		border-radius:50%;
+		width:10rem;
+		height: 10rem;
+		margin-left: 25%;
+	}
+
+	#ms img
+	{
+		border-radius:50%;
+		width:10rem;
+		height: 10rem;
+		margin-left: 25%;
+	}
+
+   #sp h2
+	{
+		padding-left: 20%;
+		padding-bottom: 2%;
+	}
+	#ms h2
+	{
+		padding-left: 25%;
+		padding-bottom: 2%;
+	}
+	#spinfo,#msinfo
+	{
+	   padding-top: 7%;
+	   padding-left: 3%;
+	   padding-right: 5%;
+	   text-align: justify;
+	   font-family: 'Montserrat', sans-serif;
+	   font-size:20px;
+	}
+	
+
+	.quotation{
+	  font-size: 20px;
+	  color:violet;
+	  //margin: 0 auto;
+	  quotes: "\201C""\201D""\2018""\2019";
+	  padding: 10px 20px;
+	  line-height: 1.0;
+	}
+
+	.quotation:before {
+	  content: open-quote;
+	  display: inline;
+	  height: 0;
+	  line-height: 0;
+	  left: -10px;
+	  position: relative;
+	  top:25px;
+	  color: violet;
+	  font-size: 3em;
+	}
+	.quotation::after {
+	  content: close-quote;
+	  display: inline;
+	  height: 0;
+	  line-height: 0;
+	  left: 10px;
+	  position: relative;
+	  top: 35px;
+	  color: violet;
+	  font-size: 3em;
+	}
+
+
+	.qau{
+	  margin:0;
+	  color: violet;
+	  padding-left: 45%;
+	  font-size: 1em;
+	  font-style: italic;
+	}	
+
+	.foot
+	{
+		background-color:#161C27;
+	}
+
+	.follow
+	{
+		color:white;margin-left: 38%;font-size:1rem;
+		font-family: 'Montserrat', sans-serif
+
+	}
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px)
+{
+
+.navbar 
+{
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+#links a
+{
+	color:white;
+	letter-spacing: 1px;
+}
+#links li
+{
+	padding-left: 4px;
+}
+
+#links a:hover
+{
+	color: #17fc54;
+    border-bottom: 1px solid #17fc54;
+}
+
+#name
+{
+	color:white;
+	letter-spacing: 2px;
+}
+
+
+#home
+{
+    background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url('bg.jpg');
+    padding-top: 1%;
+    padding-bottom: 6%;
+}
+
+#card-body
+{
+	margin-top: 10%;
+	margin-left: 13%;
+	width: 66rem;
+	height: 30.5rem;
+}
+#mobilehome,#mobile-card
+{
+	display: none;
+}
+#card-pos
+{
+	padding-left: 12%;
+	padding-top: 8%;
+}
+#a1
+{
+   font-family: 'Open Sans Condensed', sans-serif;
+   letter-spacing: 4px;
+}
+#a2
+{
+	font-family: 'Maven Pro', sans-serif;
+    letter-spacing: 3px;
+    color:#0176F6;
+}
+#a3
+{
+	font-family: 'Nunito Sans', sans-serif;
+	margin-left: 3%;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+#a4
+{
+	margin-left: 5%;
+	letter-spacing: 3px;
+}
+
+#myself
+{
+	background-color:#F8F9FA;
+	display: flex;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.about
+{
+	padding-left: 15%;
+}
+
+.about p
+{
+	border-bottom: 2px solid #0176F6;letter-spacing: 2px;width:60%;
+}
+
+.info
+{
+	padding-right: 5%;
+	padding-left: 10%;
+	margin-left: 10%;
+	text-align: justify;
+	font-family: 'Montserrat', sans-serif;
+	font-size:18px;
+	letter-spacing: 1px;
+}
+
+#education
+{
+	background-color:#81BFFF;
+	display: flex;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+#edu
+{
+	margin-top: 80%;
+	margin-left: 100%;
+}
+#timediv
+{
+	padding-left: 6%;
+}
+
+ul.timeline {
+    list-style-type: none;
+}
+ul.timeline:before {
+    content: ' ';
+    background: black;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 0.5%;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    padding-left: 12%;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid red;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+ul li p
+{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:24px;
+	letter-spacing: 2px;
+	font-style: bold;
+	color:white;
+}
+ul li h4
+{
+	color:red;
+}
+
+
+#skills
+{
+	padding-bottom: 5%;
+	margin-left: 5%;
+}
+
+#pbcolor
+{
+	background-color: #0099ff;
+}
+
+.progress .skill {
+  font: bold 12px 'Montserrat', sans-serif;
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+  
+  
+}
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 5px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+}
+
+#b1
+{
+	display: flex;
+}
+#b1 .b1a
+{
+	margin-left: 8%;
+}
+#pgstyle
+{
+	width:40%;height:24px;margin-bottom: 4%;
+}
+#skills p
+{
+	margin-left: 40%;
+	letter-spacing: 2px;
+	font-size: 20px;
+	border-bottom: 2px solid #0176F6;
+	width:5%;
+}
+#skills h1
+{
+	margin-left: 37%;
+	letter-spacing: 1px;
+	padding-bottom: 5%;
+}
+
+#projects
+{
+	background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url('bg1.jpg');
+	height: 100%; 
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30%;
+    padding-top: 5%;
+    margin-bottom: 10%;
+    
+  
+}
+
+.card
+{
+	margin-left: 5%;
+	width: 25rem;
+
+}
+#f2,#f3,#f1
+{
+	float: left;
+	position: relative;
+}
+
+.card1-hover .wbinfo
+{
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+	padding: 0;
+}
+
+.card1-hover:hover .wbinfo
+{
+	visibility: visible;
+    opacity:10;
+	height: auto;
+	transition: opacity 1s ease;
+}
+#f1:hover,#f2:hover,#f3:hover,#card-body:hover
+{
+     z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+
+.card2-hover .wbinfo
+{
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+	padding: 0;
+}
+.card2-hover:hover .wbinfo
+{
+	visibility: visible;
+	opacity:10;
+	height: auto;
+	transition: opacity 1s ease;
+
+}
+
+.card3-hover .wbinfo
+{
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+	padding: 0;
+}
+.card3-hover:hover .wbinfo
+{
+	visibility: visible;
+	opacity:10;
+	height: auto;
+	transition: opacity 1s ease;
+
+}
+
+.acc
+{
+	margin-left: 40%;
+	letter-spacing: 2px;
+	font-size: 20px;
+	border-bottom: 2px solid white;
+	width:14%;
+	color:white;
+}
+.protitle
+{
+	margin-left: 40%;
+	letter-spacing: 1px;
+	padding-bottom: 5%;
+	color:white;
+	
+}
+#inspirations
+{
+	background-color: #faffe0;
+	padding-bottom: 5%;
+	margin-bottom: 5%;
+}
+
+
+
+.institle
+{
+	padding-top: 3%;
+	margin-left:40%; 
+}
+
+#sp
+{
+	padding-top: 4%;
+	padding-bottom: 2%;
+}
+
+#sp img
+{
+	border-radius:80%;
+	width:45rem;
+	height: 15rem;
+}
+
+#ms img
+{
+	border-radius:80%;
+	width:45rem;
+	height: 15rem;
+}
+
+#sp,#ms
+{
+	display: flex;
+	margin-left: 10%;
+}
+
+#sp h2
+{
+	padding-left: 12%;
+	padding-bottom: 5%;
+}
+#ms h2
+{
+	padding-left: 20%;
+	padding-bottom: 5%;
+}
+#spinfo
+{
+   padding-top: 7%;
+   margin-left: 20%;
+   padding-right: 5%;
+   text-align: justify;
+   font-family: 'Montserrat', sans-serif;
+   font-size:20px;
+   letter-spacing: 1px;
+
+}
+#msinfo
+{
+    
+    padding-top: 7%;
+    margin-left: 18%;
+    padding-right: 5%;
+    text-align: justify;
+	font-family: 'Montserrat', sans-serif;
+	font-size:20px;
+	letter-spacing: 1px;
+
+}
+
+.quotation{
+  font-size: 30px;
+  //margin: 0 auto;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+  color:violet;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: violet;
+  font-size: 3em;
+}
+.quotation::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: violet;
+  font-size: 3em;
+}
+
+
+.qau{
+  margin:0;
+  padding-left: 65%;
+  font-size: 1.0em;
+  font-style: italic;
+  color: violet;
+}	
+
+
+.foot
+{
+	background-color:#161C27;
+}
+
+.follow
+{
+	color:white;margin-left: 46%;font-size:1rem;
+	font-family: 'Montserrat', sans-serif
+}
+
+
+
+
+
+
+
+
+}
