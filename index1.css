@@ -243,7 +243,7 @@ nav ul li a:hover
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: #E3F2F2;
+        background-color: red;
         padding-top: 5%;
         padding-bottom: 5%;
       }
